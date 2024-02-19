@@ -2738,6 +2738,47 @@ List of all cities with their respective total transactions and fraudulent trans
     </tr>
   </tbody>
 </table><h4>
+ <b>Overall Fraudulent Transactions w.r.t Year and Quarter </b></h4><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Quarter</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+    <tr>
+      <th>Year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2021</th>
+      <td>49</td>
+      <td>35</td>
+      <td>39</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>2022</th>
+      <td>37</td>
+      <td>38</td>
+      <td>40</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <th>2023</th>
+      <td>47</td>
+      <td>39</td>
+      <td>29</td>
+      <td>44</td>
+    </tr>
+  </tbody>
+</table><h4>
  <b>Overall Fraudulent Transactions w.r.t Year and Month </b></h4>
 <img src='Images/pie_chart_fraud_Year.png' alt='Note:Invalid directory or no name found.'>
 <img src='Images/pie_chart_fraud_months.png' alt='Note:Invalid directory or no name found.'><h4>
@@ -2751,17 +2792,10 @@ List of all cities with their respective total transactions and fraudulent trans
       <th>Precision</th>
       <th>Recall</th>
       <th>F1_score</th>
+      <th>Average</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>0</th>
-      <td>Logistic Regression</td>
-      <td>0.999298</td>
-      <td>0.844985</td>
-      <td>0.718346</td>
-      <td>0.776536</td>
-    </tr>
     <tr>
       <th>1</th>
       <td>Random Forest</td>
@@ -2769,22 +2803,25 @@ List of all cities with their respective total transactions and fraudulent trans
       <td>0.928082</td>
       <td>0.700258</td>
       <td>0.798233</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Logistic Regression</td>
+      <td>0.999298</td>
+      <td>0.844985</td>
+      <td>0.718346</td>
+      <td>0.776536</td>
+      <td>0.83</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Decision Tree</td>
-      <td>0.998977</td>
-      <td>0.687805</td>
-      <td>0.728682</td>
-      <td>0.707654</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>SVM</td>
-      <td>0.998301</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
+      <td>0.998929</td>
+      <td>0.681013</td>
+      <td>0.695090</td>
+      <td>0.687980</td>
+      <td>0.77</td>
     </tr>
     <tr>
       <th>4</th>
@@ -2793,6 +2830,16 @@ List of all cities with their respective total transactions and fraudulent trans
       <td>0.880435</td>
       <td>0.418605</td>
       <td>0.567426</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SVM</td>
+      <td>0.998301</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.25</td>
     </tr>
   </tbody>
 </table><h4>
@@ -2805,17 +2852,10 @@ List of all cities with their respective total transactions and fraudulent trans
       <th>Precision</th>
       <th>Recall</th>
       <th>F1_score</th>
+      <th>Average</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>0</th>
-      <td>Logistic Regression</td>
-      <td>0.935648</td>
-      <td>0.893782</td>
-      <td>0.907895</td>
-      <td>0.900783</td>
-    </tr>
     <tr>
       <th>1</th>
       <td>Random Forest</td>
@@ -2823,22 +2863,25 @@ List of all cities with their respective total transactions and fraudulent trans
       <td>0.951841</td>
       <td>0.884211</td>
       <td>0.916780</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Logistic Regression</td>
+      <td>0.935648</td>
+      <td>0.893782</td>
+      <td>0.907895</td>
+      <td>0.900783</td>
+      <td>0.91</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Decision Tree</td>
-      <td>0.875529</td>
-      <td>0.772834</td>
-      <td>0.868421</td>
-      <td>0.817844</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>SVM</td>
-      <td>0.675699</td>
-      <td>0.470588</td>
-      <td>0.063158</td>
-      <td>0.111369</td>
+      <td>0.872989</td>
+      <td>0.771226</td>
+      <td>0.860526</td>
+      <td>0.813433</td>
+      <td>0.83</td>
     </tr>
     <tr>
       <th>4</th>
@@ -2847,9 +2890,20 @@ List of all cities with their respective total transactions and fraudulent trans
       <td>0.717201</td>
       <td>0.647368</td>
       <td>0.680498</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SVM</td>
+      <td>0.675699</td>
+      <td>0.470588</td>
+      <td>0.063158</td>
+      <td>0.111369</td>
+      <td>0.33</td>
     </tr>
   </tbody>
 </table><h4>
+ <b>Conclusion: Based on metrices, Random Forest and Logistic Regression are the most efficient one as comapred to others. </b></h4><h4>
 <b>Sample Data (First 10 Rows):</b></h4><table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
